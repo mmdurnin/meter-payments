@@ -5,8 +5,8 @@ $angelDarkGray: rgb(232,233,234);
 
 @font-face {
     font-family: AngelFont;
-    src: font-url('museosans_500_italic.ttf'),
-         url('MuseoSans_500_Italic.otf');
+    src: font-url('../fonts/museosans_500_italic.ttf'),
+         url('../fonts/MuseoSans_500_Italic.otf');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -14,27 +14,27 @@ $angelDarkGray: rgb(232,233,234);
 
 @font-face {
     font-family: AngelFont;
-    src: url('museosansrounded-300-webfont.ttf');
+    src: url('../fonts/museosansrounded-300-webfont.ttf');
     font-weight: 300;
     font-display: swap;
 }
 
 @font-face {
     font-family: AngelFont;
-    src: url('museosansrounded-500-webfont.ttf');
+    src: url('../fonts/museosansrounded-500-webfont.ttf');
     font-weight: 500;
     font-display: swap;
 }
 
 @font-face {
     font-family: AngelFont;
-    src: url('museosansrounded-500-webfont.ttf');
+    src: url('../fonts/museosansrounded-500-webfont.ttf');
     font-display: swap;
 }
 
 @font-face {
     font-family: AngelFont;
-    src: url('museosansrounded-700-webfont.ttf');
+    src: url('../fonts/museosansrounded-700-webfont.ttf');
     font-weight: 700;
     font-display: swap;
 }
