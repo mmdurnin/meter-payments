@@ -1,12 +1,15 @@
 import React from 'react';
 import '../stylesheets/App.scss';
+import { Provider } from "react-redux";
+import { HashRouter } from "react-router-dom";
+import { App } from "./app";
 
-function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
-}
+const Root = ({ store }) => (
+  <Provider store={store}>
+    <HashRouter>
+      <App />
+    </HashRouter>
+  </Provider>
+);
 
-export default App;
+export default Root;
