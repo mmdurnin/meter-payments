@@ -7,6 +7,6 @@ export const Header = () => (
         <img src={icon} />
         <p>
             Spot<strong>Angels</strong> - meter analytics
-    </p>
+        </p>
     </div>
 );
