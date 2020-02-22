@@ -1,4 +1,4 @@
-import * as MeterAPIUtil from "../util/analytics_api";
+import * as MeterAPIUtil from "../util/analytics-api";
 
 export const RECEIVE_ACTIVE = "RECEIVE_ACTIVE";
 export const RECEIVE_COMPLETE = "RECEIVE_COMPLETE";
@@ -18,8 +18,7 @@ export const fetchMeterData = (
     end_time,
     meter_zone,
     plate,
-    city_id = "56"
-) => dispatch => {
+    city_id = "56") => dispatch => {
     return MeterAPIUtil.fetchMeterData(
         city_id,
         start_time,
@@ -27,11 +26,7 @@ export const fetchMeterData = (
         meter_zone,
         plate
     ).then(meterData => {
-        dispatch(
-            receiveActive(meterData["meters"]["active_meters_sessions"])
-        ),
-            dispatch(
-                receiveComplete(meterData["meters"]["done_meters_session"])
-            );
+        dispatch(receiveActive(meterData["meters"]["active_meters_sessions"]))
+        dispatch(receiveComplete(meterData["meters"]["done_meters_session"]));
     });
 };

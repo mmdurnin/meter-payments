@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import $ from 'jquery';
 import { connect } from 'react-redux';
 import { fetchMeterData } from '../../actions/meter-actions';
 const FileDownload = require('js-file-download');
@@ -49,7 +50,7 @@ const Filters = ({ fetchMeterData }) => {
         if (meterZone !== "") queryString = queryString.concat(`&external_meter_id=${meterZone}`)
         if (licensePlate !== "") queryString = queryString.concat(`&license_plate=${licensePlate}`)
         return $.ajax({
-            url: ` https://angels-api-staging.spotangels.com/api/v3/meters/analytics${queryString}&csv=true`,
+            url: `https://angels-api-staging.spotangels.com/api/v3/meters/analytics${queryString}&csv=true`,
             method: "GET"
         }).then((file) => {
             FileDownload(file, 'meter-report.csv');

@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 export const fetchMeterData = (city_id, start_time, end_time, meter_zone, plate) => {
 
     let queryString = `?city_id=${city_id}&start_time=${start_time}&end_time=${end_time}`;
