@@ -1,5 +1,5 @@
 import React from 'react';
-import '../stylesheets/App.scss';
+import '../stylesheets/main.scss';
 import { Provider } from "react-redux";
 import { HashRouter } from "react-router-dom";
 import { App } from "./app";

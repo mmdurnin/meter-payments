@@ -1,0 +1,90 @@
+@import 'base';
+
+.filter-section {
+    align-items: flex-start;
+    width: 100%;
+
+    form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+
+        * {
+            box-sizing: border-box;
+        }
+
+        > .row {
+            padding: .85em;
+            align-items: center;
+        }
+
+        input {
+            height: 50px;
+            border: 1.5px solid $angelDarkGray;
+            border-radius: 3px;
+            box-shadow: none;
+            background-color: white;
+            text-align: center;
+            color: $angelBlue;
+        }
+
+        input[type="submit"] {
+            background-color: $angelBlue;
+            color: white;
+            border: 1.5px solid $angelDarkGray;
+        }
+
+        button {
+            bottom: 10vh;
+            right: 10vh;
+            height: 50px;
+            border: 1.5px solid $angelDarkGray;
+            background-color: rgba(255, 255, 255, 0.527);
+            font-weight: 700;
+            color: $angelBlue;
+        }
+
+        input[type="submit"]:hover, button:hover {
+            transform: scale(1.1);
+        }
+
+        h4 {
+            margin: 5% .85em;
+        }
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .filter-section {
+        align-items: center;
+    }
+
+    form {
+    margin-top: .85em !important;
+    display: flex;
+    flex-direction: column !important;
+
+    .row {
+        padding: .05em !important;
+
+        input {
+            width: 200px;
+        }
+
+        input[type="submit"] {
+            width: 400px;
+        }
+
+        button {
+            position: fixed;
+            bottom: 5vh;
+            right: 5vw;
+        }
+        h4 {
+            display: none;
+        }
+    }
+    }
+}

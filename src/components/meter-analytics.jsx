@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "../stylesheets/main.scss";
 import Filters from './filters/filters';
 import ActiveSessions from './charts/active-sessions';
 import CompleteSessions from './charts/complete-sessions';

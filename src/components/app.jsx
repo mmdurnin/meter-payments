@@ -1,7 +1,8 @@
 import React from "react";
-import { Route, Redirect, Switch, Link } from "react-router-dom";
+import "../stylesheets/main.scss";
+// import { Route, Redirect, Switch, Link } from "react-router-dom";
+// import { Nav } from "./nav/nav";
 import { Header } from "./header/header";
-import { Nav } from "./nav/nav";
 import MeterAnalytics from './meter-analytics'
 
 export const App = () => (

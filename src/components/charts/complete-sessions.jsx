@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import "../../stylesheets/charts.scss";
 
 const CompleteSessions = props => {
     return (

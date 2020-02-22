@@ -1,0 +1,23 @@
+@import 'base';
+
+.header {
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+
+    height: 40px;
+    padding: .85em;
+
+    background-color: $angelBlue;
+    color: white;
+
+    p {
+        padding-left: .85em;
+    }
+
+    img {
+        height: 30px;
+        width: auto;
+    }
+}

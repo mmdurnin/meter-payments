@@ -1,4 +1,5 @@
 import React from "react";
+import "../../stylesheets/header.scss";
 
 export const Header = () => (
     <div className="header row">

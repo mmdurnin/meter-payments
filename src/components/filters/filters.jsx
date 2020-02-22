@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import $ from 'jquery';
 import { connect } from 'react-redux';
+import "../../stylesheets/filters.scss";
 import { fetchMeterData } from '../../actions/meter-actions';
 const FileDownload = require('js-file-download');
 
