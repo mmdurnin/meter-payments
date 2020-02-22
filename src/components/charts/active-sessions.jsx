@@ -18,7 +18,7 @@ const ActiveSessions = props => {
                 </div>
                 <div>
                     {props.activeSessions.map((item, i) => {
-                        let date = new Date(`${item.start_time.slice(0, 10)}` + ' ' + `${item.start_time.slice(11, 17)}`);;
+                        let date = new Date(`${item.start_time.slice(0, 10)} ${item.start_time.slice(11, 17)}`);;
                         let minutes = date.getMinutes();
                         minutes = minutes < 10 ? '0' + minutes : minutes;
 

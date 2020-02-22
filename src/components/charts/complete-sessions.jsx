@@ -20,11 +20,11 @@ const CompleteSessions = props => {
                 <div>
                     {props.completeSessions.map((item, i) => {
 
-                        let dateStart = new Date(`${item.start_time.slice(0, 10)}` + ' ' + `${item.start_time.slice(11, 17)}`);
+                        let dateStart = new Date(`${item.start_time.slice(0, 10)} ${item.start_time.slice(11, 17)}`);
                         let startMinutes = dateStart.getMinutes();
                         startMinutes = startMinutes < 10 ? '0' + startMinutes : startMinutes;
 
-                        let dateEnd = new Date(`${item.end_time.slice(0, 10)}` + ' ' + `${item.end_time.slice(11, 17)}`);
+                        let dateEnd = new Date(`${item.end_time.slice(0, 10)} ${item.end_time.slice(11, 17)}`);
                         let endMinutes = dateEnd.getMinutes();
                         endMinutes = endMinutes < 10 ? '0' + endMinutes : endMinutes;
 

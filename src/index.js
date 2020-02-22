@@ -8,6 +8,7 @@ import * as serviceWorker from './serviceWorker';
 document.addEventListener("DOMContentLoaded", () => {
     const store = configureStore();
     const root = document.getElementById("root");
+    console.log(process.env.NODE_ENV)
 
     ReactDOM.render(<Root store={store} />, root);
 });

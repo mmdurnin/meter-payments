@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import "../stylesheets/main.scss";
 import Filters from './filters/filters';
 import ActiveSessions from './charts/active-sessions';
